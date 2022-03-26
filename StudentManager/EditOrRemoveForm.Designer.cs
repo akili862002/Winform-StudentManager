@@ -254,6 +254,7 @@
             this.deleteButton.TabIndex = 48;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // updateButton
             // 
@@ -294,6 +295,7 @@
             this.Controls.Add(this.firstNameTextField);
             this.Controls.Add(this.firstNameLabel);
             this.Name = "EditOrRemoveForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit or remove student";
             this.Load += new System.EventHandler(this.EditOrRemoveForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.avatarPicture)).EndInit();

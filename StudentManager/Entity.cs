@@ -8,6 +8,7 @@
             Famale
         }
 
+        public int id;
         public string first_name;
         public string last_name;
         public string birthdate;
@@ -15,6 +16,12 @@
         public string phone;
         public string address;
         public string avatar;
+
+        public StudentEntity setId(int id)
+        {
+            this.id = id;
+            return this;
+        }
 
         public StudentEntity setFirstName(string first_name)
         {

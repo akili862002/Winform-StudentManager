@@ -32,7 +32,8 @@ namespace StudentManager
                 DataGridViewRow row = this.studentsTable.Rows[currentIndex];
                 StudentEntity student = new StudentEntity();
                 student
-                 .setFirstName(row.Cells["first_name"].Value.ToString())
+                .setId(Int32.Parse(row.Cells["id"].Value.ToString()))
+                .setFirstName(row.Cells["first_name"].Value.ToString())
                 .setLastName(row.Cells["last_name"].Value.ToString())
                 .setBirthdate(DateTime.Parse(row.Cells["birthdate"].Value.ToString()))
                 .setPhone(row.Cells["phone"].Value.ToString())
