@@ -163,6 +163,7 @@
             this.id.HeaderText = "ID";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             this.id.Width = 125;
             // 
             // first_name
@@ -171,6 +172,7 @@
             this.first_name.HeaderText = "First name";
             this.first_name.MinimumWidth = 6;
             this.first_name.Name = "first_name";
+            this.first_name.ReadOnly = true;
             this.first_name.Width = 125;
             // 
             // last_name
@@ -179,6 +181,7 @@
             this.last_name.HeaderText = "Last name";
             this.last_name.MinimumWidth = 6;
             this.last_name.Name = "last_name";
+            this.last_name.ReadOnly = true;
             this.last_name.Width = 125;
             // 
             // birthdate
@@ -187,6 +190,7 @@
             this.birthdate.HeaderText = "Birthdate";
             this.birthdate.MinimumWidth = 6;
             this.birthdate.Name = "birthdate";
+            this.birthdate.ReadOnly = true;
             this.birthdate.Width = 125;
             // 
             // gender
@@ -195,6 +199,7 @@
             this.gender.HeaderText = "Gender";
             this.gender.MinimumWidth = 6;
             this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
             this.gender.Width = 125;
             // 
             // phone
@@ -203,6 +208,7 @@
             this.phone.HeaderText = "Phone";
             this.phone.MinimumWidth = 6;
             this.phone.Name = "phone";
+            this.phone.ReadOnly = true;
             this.phone.Width = 125;
             // 
             // address
@@ -211,6 +217,7 @@
             this.address.HeaderText = "Address";
             this.address.MinimumWidth = 6;
             this.address.Name = "address";
+            this.address.ReadOnly = true;
             this.address.Width = 125;
             // 
             // avatar
@@ -221,6 +228,7 @@
             this.avatar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.avatar.MinimumWidth = 6;
             this.avatar.Name = "avatar";
+            this.avatar.ReadOnly = true;
             this.avatar.Width = 58;
             // 
             // avatarURL
@@ -229,6 +237,7 @@
             this.avatarURL.HeaderText = "Hidden";
             this.avatarURL.MinimumWidth = 6;
             this.avatarURL.Name = "avatarURL";
+            this.avatarURL.ReadOnly = true;
             this.avatarURL.Visible = false;
             this.avatarURL.Width = 125;
             // 

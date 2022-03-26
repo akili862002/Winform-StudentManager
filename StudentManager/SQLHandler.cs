@@ -13,7 +13,7 @@ namespace StudentManager
             SqlConnection connection = new SqlConnection(this.sqlConnectionString);
             connection.Open();
             adapter = new SqlDataAdapter("SELECT TOP 10 * FROM Students ORDER BY id DESC", connection);
-
+            connection.Close();
             return adapter;
         }
         public void createStudentSQL(StudentEntity student)
@@ -43,6 +43,19 @@ namespace StudentManager
                     Console.WriteLine(ex.Message);
                 }
             }
+            connection.Close();
+        }
+
+        public void deleteStudentByIdSQL(int id)
+        {
+            SqlConnection connection = new SqlConnection(this.sqlConnectionString);
+            connection.Open();
+            using (SqlCommand command = connection.CreateCommand())
+            {
+                command.CommandText = String.Format( "DELETE FROM Students WHERE id = {0}", id);
+                var rows_affected  =  command.ExecuteNonQuery();
+            }
+            connection.Close();
         }
     }
 }
